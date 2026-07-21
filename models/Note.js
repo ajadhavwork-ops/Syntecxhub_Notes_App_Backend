@@ -13,14 +13,14 @@ const noteSchema = new mongoose.Schema(
         
         },
 
-        uder:{
+        user:{
             type:mongoose.Schema.Types.ObjectId,
             ref: "User",
             required:true,
         },
 
         isArchived:{
-            type:boolean,
+            type:Boolean,
             default:false,
 
         },
@@ -31,4 +31,4 @@ const noteSchema = new mongoose.Schema(
     }
 );
 
-module.exports = momgoose.model("Note" , noteSchema);
+module.exports = mongoose.model("Note" , noteSchema);
