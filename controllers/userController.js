@@ -58,8 +58,32 @@ const getUserById = async(req,res) => {
 }
 };
 
+const Note = require("../models/Note");
+
+const getUserNotes = async (req, res) => {
+    try {
+
+        const notes = await Note.find({
+            user: req.params.id
+        });
+
+        res.status(200).json({
+            message: "User notes fetched successfully",
+            notes
+        });
+
+    } catch (error) {
+
+        res.status(500).json({
+            message: error.message
+        });
+
+    }
+};
+
 module.exports = {
     createUser,
     getAllUsers,
-    getUserById
+    getUserById,
+    getUserNotes,
 };
