@@ -213,7 +213,7 @@ node server.js
 **Aditya Shivaji Jadhav**
 
 - GitHub: https://github.com/ajadhavwork-ops
-- LinkedIn: https://www.linkedin.com/in/aditya-jadhav/
+- LinkedIn: www.linkedin.com/in/aditya-jadhav29
 
 ---
 
